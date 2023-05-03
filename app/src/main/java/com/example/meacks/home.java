@@ -8,25 +8,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+public class home extends AppCompatActivity {
     private ImageButton button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        button= (ImageButton) findViewById(R.id.login);
-
+        setContentView(R.layout.activity_home);
+        button = (ImageButton) findViewById(R.id.menu);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openactivity_login();
+                openactivity_menu();
 
             }
         });
     }
-    public void   openactivity_login(){
+        public void openactivity_menu(){
 
-        Intent intent =new Intent(this,login.class);
-        startActivity(intent);
+            Intent intent =new Intent(this,menu.class);
+            startActivity(intent);
+        }
     }
-}

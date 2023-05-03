@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    tools:context=".home">
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-7dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="89dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:contentDescription="@string/todo"
+            android:text="@string/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="89dp"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            android:contentDescription="TODO"
+            android:text="@string/menu"
+            app:srcCompat="@drawable/baseline_restaurant_menu_24"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="652dp" />
+
+        <ImageButton
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/baseline_payment_24"
+            android:contentDescription="TODO" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:srcCompat="@drawable/baseline_person_pin_24"
+            android:contentDescription="TODO" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hey"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="644dp"
+        android:text="Hey"
+        android:textColor="@color/purple_200"
+        android:textSize="40dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/meacsers"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="567dp"
+        android:text="Meacksers!"
+        android:textColor="@color/purple_200"
+        android:textSize="40dp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

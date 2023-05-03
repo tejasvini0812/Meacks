@@ -5,31 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/welcome"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/loginbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="71dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="213dp"
-        android:layout_marginBottom="52dp"
-        android:text="Login"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="14dp"
+
+        android:backgroundTint="@color/teal_200"
+        android:drawablePadding="4dp"
+
+        android:drawableTint="#ff0000"
+        android:text="l"
+        android:textColor="@color/black"
+        app:srcCompat="@drawable/arrow"
         tools:layout_editor_absoluteX="92dp"
         tools:layout_editor_absoluteY="629dp" />
 
-    <Button
-        android:id="@+id/registerbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="52dp"
-        android:text="Register"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="629dp" />
+
+
 
 </RelativeLayout>
